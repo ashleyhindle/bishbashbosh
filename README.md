@@ -1,5 +1,7 @@
 # Bish Bash Bosh
 
+This was written for a job interview/challenge in an hour and a half-ish.  I'm leaning towards liking annotations now.
+
 ```
 git clone https://github.com/ashleyhindle/bishbashbosh
 cd bishbashbosh
