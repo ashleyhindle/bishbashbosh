@@ -12,7 +12,7 @@ abstract class AbstractAnimal
 		$this->hp = rand(10, 20);
 	}
 
-	public function attack(\BishBashBoshBundle\Model\AbstractAnimalModel $animal)
+	public function attack(\BishBashBoshBundle\Model\Animals\AbstractAnimal $animal)
 	{
 		$animal->reduceHp($this->getDamagePoints());
 		return $animal;
@@ -25,7 +25,7 @@ abstract class AbstractAnimal
 
 	public function isAlive()
 	{
-		return ($this->hp > 0);
+		return ($this->getHp() > 0);
 	}
 
 	public function reduceHp($hp)
