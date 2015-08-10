@@ -1,0 +1,14 @@
+{% extends 'BishBashBoshBundle::base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div id="welcome">
+                <h1><span>List of species</h1>
+                {% for specie in species %}
+                	<a href='/specie/{{specie}}'>{{specie|capitalize}}</a><br/>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

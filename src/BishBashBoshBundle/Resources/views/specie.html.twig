@@ -1,0 +1,37 @@
+{% extends 'BishBashBoshBundle::base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div id="welcome">
+                <h1><span>Specie: {{specie.getName()}}</h1>
+            <table>
+	                <tr>
+		                <th>
+		                	Family
+		                </th>
+		                <td>
+		                	{{specie.getFamily().getName()|capitalize}}
+		                </td>
+	                </tr>
+	                <tr>
+		                <th>
+		                Size
+		                </th>
+		                <td>
+		                	{{specie.getSize()}}
+		                </td>
+	                </tr>
+	                <tr>
+		                <th>
+		                Damage Points
+		                </th>
+						<td>
+		                	{{specie.getDamagePoints()}}
+		                </td>
+	                </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
