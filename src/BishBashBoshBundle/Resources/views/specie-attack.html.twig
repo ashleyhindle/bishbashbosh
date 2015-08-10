@@ -1,0 +1,15 @@
+{% extends 'BishBashBoshBundle::base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div id="welcome">
+                {% include 'BishBashBoshBundle:partials:specie.html.twig' with {'specie': specie} %}
+                <hr>
+                {% include 'BishBashBoshBundle:partials:specie.html.twig' with {'specie': specieToAttack} %}
+                <hr>
+                <a href='/species/'>Back to species list</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
