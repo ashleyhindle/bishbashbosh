@@ -4,6 +4,7 @@
     <div id="wrapper">
         <div id="container">
             <div id="welcome">
+                <strong>{{specie.getName()}} attacked {{specieToAttack.getName()}} for {{specie.getDamagePoints()}} damage</strong>
                 {% include 'BishBashBoshBundle:partials:specie.html.twig' with {'specie': specie} %}
                 <hr>
                 {% include 'BishBashBoshBundle:partials:specie.html.twig' with {'specie': specieToAttack} %}
